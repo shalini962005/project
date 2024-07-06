@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <style>
+        table{
+            margin: 3% 5% 0 5%;
+            font-family:Verdana, Geneva, Tahoma, sans-serif ;
+        }
+        td{
+            padding: 50px;
+            box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+            margin: 50px;
+        }
+        img{
+            width: 300px;
+            height: 350px;
+        }
+        span{
+            font-weight: 500;
+        }
+        #decor{
+            text-decoration: line-through;
+            padding-right: 5px;
+        }
+        .red{
+            color: red;
+            font-weight: 800;
+        }
+        .btn{
+            padding: 2px;
+            margin-top: 3px;
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main-header">
+        <ul class="header-content">
+            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="sign_up.html">SIGN UP</a></li>
+        </ul>
+    </div>
+    <section id="header">
+        <img src="image\logo.jpg" class="logo" alt="logo image">
+         
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="fa fa-shopping-cart" style="font-size:24px"></i> </a></li>
+            </ul>
+        </div>
+    </section>
+    <div class="items">
+        <table>
+            <tr>
+                <td>
+                    <img src="images\black gown.jpeg" alt="item">
+                    <div class="description"><h4>Gown for Women <br>Colour: <span>Dark Green</span><br>Rating: <span>⭐⭐⭐⭐</span><br>Price: Rs. <span id="decor">2,000</span>1,500 <span class="red">20% Off</span></h4><button class="btn">Add to Cart</button></div>
+                </td>
+                <td>
+                    <img src="images\black shirt.jpeg" alt="item">
+                    <div class="description"><h4>Shirt for Men <br>Colour: <span>Black</span><br>Rating: <span>⭐⭐⭐⭐⭐</span><br>Price: Rs. <span id="decor">2,200</span>1,900 <span class="red">10% Off</span></h4><button class="btn">Add to Cart</button></div>
+                </td>
+                <td>
+                    <img src="images\blue gown.jpeg" alt="item">
+                    <div class="description"><h4>Gown for Women<br>Colour: <span>Blue</span><br>Rating: <span>⭐⭐⭐⭐</span><br>Price: Rs. <span id="decor">1,700</span>1,400 <span class="red">7% Off</span></h4><button class="btn">Add to Cart</button></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="images\co-ord set.jpeg" alt="item">
+                    <div class="description"><h4>Co-ord set for Women<br>Colour: <span>Printed</span><br>Rating: <span>⭐⭐⭐⭐⭐</span><br>Price: Rs. <span id="decor">2,900</span>2,500 <span class="red">9% Off</span></h4><button class="btn">Add to Cart</button></div>
+                </td>
+                <td>
+                    <img src="images\girl tshirt.jpeg" alt="item">
+                    <div class="description"><h4>Tshirt for Women <br>Colour: <span>Brown</span><br>Rating: <span>⭐⭐⭐⭐</span><br>Price: Rs. <span id="decor">800</span>660 <span class="red">10% Off</span></h4><button class="btn">Add to Cart</button></div>
+                </td>
+                <td>
+                    <img src="images\kids wear.jpeg" alt="item">
+                    <div class="description"><h4>Kids combo (Girl)<br>Colour: <span>Pink</span><br>Rating: <span>⭐⭐⭐⭐⭐</span><br>Price: Rs. <span id="decor">3,700</span>3,200 <span class="red">12% Off</span></h4><button class="btn">Add to Cart</button></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="images\pink midi.jpeg" alt="item">
+                    <div class="description"><h4>Midi for Women <br>Colour: <span>Pink</span><br>Rating: <span>⭐⭐⭐⭐⭐</span><br>Price: Rs. <span id="decor">2,100</span>2,000 <span class="red">5% Off</span></h4><button class="btn">Add to Cart</button></div>
+                </td>
+                <td>
+                    <img src="images\shirt.jpeg" alt="item">
+                    <div class="description"><h4>Shirt for Men <br>Colour: <span>Black & white</span><br>Rating: <span>⭐⭐⭐⭐</span><br>Price: Rs. <span id="decor">1,200</span>1,100 <span class="red">6% Off</span></h4><button class="btn">Add to Cart</button></div>
+                </td>
+                <td>
+                    <img src="images\trackpants.jpeg" alt="item">
+                    <div class="description"><h4>Trackpants for women<br>Colour: <span>Dark Green</span><br>Rating: <span>⭐⭐⭐⭐</span><br>Price: Rs. <span id="decor">2,300</span>2,100 <span class="red">8% Off</span></h4><button class="btn">Add to Cart</button></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="images\twinie tshirt.jpeg" alt="item">
+                    <div class="description"><h4>Twin Tshirts for girls<br>Colour: <span>White</span><br>Rating: <span>⭐⭐⭐⭐⭐</span><br>Price: Rs. <span id="decor">3,000</span>2,700 <span class="red">10% Off</span></h4><button class="btn">Add to Cart</button></div>
+                </td>
+                <td>
+                    <img src="images\white sweatshirt.jpeg" alt="item">
+                    <div class="description"><h4>Sweatshirt for Men <br>Colour: <span>White</span><br>Rating: <span>⭐⭐⭐⭐</span><br>Price: Rs. <span id="decor">1,600</span>1,300 <span class="red">12% Off</span></h4><button class="btn">Add to Cart</button></div>
+                </td>
+                <td>
+                    <img src="images\kids wear2.jpeg" alt="item">
+                    <div class="description"><h4>Frock for girls<br>Colour: <span>Pink</span><br>Rating: <span>⭐⭐⭐⭐⭐</span><br>Price: Rs. <span id="decor">1,200</span>1,000 <span class="red">5% Off</span></h4><button class="btn">Add to Cart</button></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

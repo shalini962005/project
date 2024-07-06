@@ -1,0 +1,150 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: hsl(0,0%,90%);
+    
+}
+
+#hero {
+     margin: 10% 100px 0 150px;
+}
+#image{
+    width: 50%;
+    margin-left: 10%;
+}
+#hero h1{
+    font-size: 34px;
+}
+#hero h6{
+    font-weight: 700;
+}
+#aqua{
+    color: aqua;
+}
+
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .fe-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid#cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#feature .fe-box:hover {
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+#feature .fe-box h6 {
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+    font-size: 15px;
+}
+
+#product1 {
+    text-align: center;
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product1, .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    margin: 15px 0;
+    transition: 0.2 ease;
+    position: relative;
+}
+
+#product1, .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+}
+
+#product1, .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product, .pro ,.des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product, .pro ,.des spam {
+    color: #606063;
+    font-size: 12px;
+
+}
+
+#product1, .pro, .des h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+#product, .pro, .des i {
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+
+#product, .pro, .des h4{
+    padding: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #646469;
+    width: 100%;
+    height: 40vh ;
+    background-size: cover;
+    background-position: center;
+
+}
+#product {
+    display: flex;
+    flex-direction: column;
+
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    padding: 50px 7%;
+}
+.featured-products{
+    text-align: center;
+    font-size: 30px;
+}
+.pro-container{
+    margin: 10px;
+}
+.pro img{
+    height: 400px;
+    width: 250px;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <style>
+        .details{
+            display: flex;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .part1{
+            width: 60%;
+            margin: 8% 5%;
+        }
+        .part2{
+            width: 37%;
+            margin: 8% 5% 5% 0;
+            box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1),10px 10px 54px rgba(70, 62, 221, 0.1);
+            padding: 20px 0 0 20px;
+        }
+        .part2 section{
+            font-weight: 500;
+            font-size: 16px;
+        }
+        .names{
+            display: flex;
+        }
+        .part2 input{
+            height: 35px;
+        }
+        #btn{
+            width: 20%;
+            height: 30px;
+            margin-top: 5px;
+            font-size: 15px;
+            background-color: gray;
+            border: 1px solid gray;
+        }
+        #btn:hover{
+            background-color: aqua;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-header">
+        <ul class="header-content">
+            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="sign_up.html">SIGN UP</a></li>
+        </ul>
+    </div>
+    <section id="header">
+        <img src="image\logo.jpg" class="logo" alt="logo image">
+         
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="fa fa-shopping-cart" style="font-size:24px"></i> </a></li>
+            </ul>
+        </div>
+    </section>
+    <div class="details">
+        <div class="part1">
+            <h1>Contact Us</h1><br><br>
+            <p>Need to get in touch with us? Either fill out the form with your inquiry or contact us on the following email/phone number.</p><br><p><i class="fa fa-envelope" style="color:red;font-size: 22px;margin-right: 7px;"></i>lovelane@store.com</p><br><p><i class="fa fa-phone" style="color:red;font-size: 24px;margin-right: 7px;"></i>+91 8736273898 </p><br><p><i class="fa fa-map-marker" style="color:red;font-size: 26px;margin-right: 7px;"></i>2435/4000,Sector-L,Rashmikhand,Lucknow,Uttar Pradesh,226005</p>
+
+        </div>
+        <div class="part2">
+            <div class="names">
+                <section style="margin-right: 10px;">First Name <br><input type="text" required style="width: 93%;"></section>
+                <section>Last Name <br><input type="text" required></section><br>
+            </div>
+            <section>Email<br><input type="email" required style="width: 81%;"></section><br>
+            <section>What can we help you with?<br><input type="text" style="width: 81%;" required></section>
+            <button id="btn">Submit</button>
+
+        </div>
+    </div>
+</body>
+</html>
