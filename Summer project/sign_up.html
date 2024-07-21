@@ -33,6 +33,10 @@
             background-color: aqua;
             cursor: pointer;
         }
+        span{
+            color: red;
+            margin-left: 10px;
+        }
     </style>
 </head>
 <body style="background-color: aliceblue; font-family: Verdana, Geneva, Tahoma, sans-serif;">
@@ -42,18 +46,45 @@
         </h1>
         <h5>Create your account</h5><br/>
         <div>
-            <input type="text" placeholder="Your name" class="search" name="name" required><br/><br/>
-            <input type="email" placeholder="Your email address" class="search" name="email address" required><br/><br/>
-            <input type="text"  placeholder="Your phone number" class="search" name="phone number"><br/><br/>
-            <input type="text" placeholder="City" class="search" name="city name" required><br/><br/>
-            <input type="text" placeholder="State" class="search" name="State"required><br/><br/>
-            <input type="password" placeholder="Create a password" class="search" name="password" required><br/><br/>
-            <button id="btn">SIGN UP</button><br/><br/>
+            <input type="text" placeholder="Your name" class="search" name="name" id="name"><span id="n"></span><br/><br/>
+            <input type="email" placeholder="Your email address" class="search" name="email address" id="email"><span id="e"></span><br/><br/>
+            <input type="text"  placeholder="Your phone number" class="search" name="phone number" id="phone"><span id="ph"></span><br/><br/>
+            <input type="text" placeholder="City" class="search" name="city name" id="city"><span id="c"></span><br/><br/>
+            <input type="text" placeholder="State" class="search" name="State" id="state"><span id="s"></span><br/><br/>
+            <input type="password" placeholder="Create a password" class="search" name="password" id="pass"><span id="p"></span><br/><br/>
+            <button id="btn" onclick="signup()">SIGN UP</button><br/><br/>
             <h5>Already signed up?<a href="login.html">Log in</a></h5>
-
         </div>
-        
     </center>
+    <script>
+        function signup(){
+            let n=document.getElementById("name").value;
+            let e=document.getElementById("email").value;
+            let ph=document.getElementById("phone").value;
+            let c=document.getElementById("city").value;
+            let s=document.getElementById("state").value;
+            let p=document.getElementById("pass").value;
+            let x="*Invalid*";
+            if((/[a-zA-Z]/.test(n))==false){
+                document.getElementById("n").innerHTML=x;
+            }
+            if((/[a-zA-Z0-9]@[a-z].[a-z]/.test(e))==false){
+                document.getElementById("e").innerHTML=x;
+            }
+            if((/[0-9]/.test(ph))==false){
+                document.getElementById("ph").innerHTML=x;
+            }
+            if((/[a-zA-Z]/.test(c))==false){
+                document.getElementById("c").innerHTML=x;
+            }
+            if((/[a-zA-Z]/.test(s))==false){
+                document.getElementById("s").innerHTML=x;
+            }
+            if((/[a-zA-Z0-9@$_]/.test(p))==false){
+                document.getElementById("p").innerHTML=x;
+            }
+        }
+    </script>
     
 </body>
 </html>
